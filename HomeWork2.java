@@ -14,6 +14,7 @@ public class HomeWork2 {
         FillTheArray(); //второе задание
         IncreaseTheArrayVol(); //третье задание
         SumOfHalf(); //четвертое задание
+        StringAndCount(); //пятое задание
     }
 
     public static void ArraySum(){ //Задание 1
@@ -109,6 +110,24 @@ public class HomeWork2 {
 
     }
 
+    public static void StringAndCount(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите количество его повторений слова");
+        int number = sc.nextInt(); //вводим число равное количеству значений в массиве
+        sc.nextLine();
+
+        System.out.println("Введите само слово");
+        String word = sc.nextLine();    //вводим строку которая будет повторяться в массиве
+
+        String[] array = new String[number];
+
+        for (int j = 0; j < array.length; j++){
+            array[j] = word;
+        }
+
+        System.out.println("Результат" + Arrays.toString(array));
+    }
 
     // практические задания с лекции - 5
     public static void cycleFor(){
